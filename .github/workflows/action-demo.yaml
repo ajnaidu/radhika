@@ -9,7 +9,7 @@ jobs:
       - name: clone
         uses: actions/checkout@v7
         with:
-          repository: https://github.com/ajnaidu/sample.git
+          repository: ajnaidu/sample
       - name: pwd-before
         run: pwd
       - name: build

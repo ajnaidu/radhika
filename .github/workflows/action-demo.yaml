@@ -10,11 +10,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           repository: ajnaidu/sample
-      - name: pwd-before
-        run: pwd
       - name: build
-        run: |
-          cd sample
-          mvn clean install
+        run: mvn clean install
       - name: deploy 
         run: echo "deploying the project..."

@@ -8,6 +8,12 @@ jobs:
       steps:
       - name: clone
         run: git clone https://github.com/ajnaidu/sample.git
+      - name: pwd-before
+        run: pwd
+      - name: change directory
+        run: cd sample
+      - name: pwd-after
+        run: pwd
       - name: build
         run: mvn clean install
       - name: deploy 

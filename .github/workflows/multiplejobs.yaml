@@ -1,0 +1,12 @@
+name:
+on: workflow_dispatch
+jobs:
+  job1:
+      runs-on : ubuntu-latest
+      steps:
+      - name: building
+        run: echo " building the job "
+      - name: testing
+        run: echo " testing the job "
+      - name: Deploying 
+        run: echo " Deploying the job "

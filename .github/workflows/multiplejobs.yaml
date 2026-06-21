@@ -11,6 +11,8 @@ jobs:
       - name: pwd-before
         run: pwd
       - name: build
-        run: cd sample && mvn clean install
+        run: |
+          cd sample
+          mvn clean install
       - name: deploy 
         run: echo "deploying the project..."

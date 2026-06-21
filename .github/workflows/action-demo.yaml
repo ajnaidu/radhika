@@ -1,0 +1,20 @@
+name: Checkout Action Demo
+on: 
+  workflow_dispatch:
+  push:
+jobs:
+  job1:
+      runs-on: ubuntu-latest
+      steps:
+      - name: clone
+        uses: actions/checkout@v7
+        with:
+          repository: ajnaidu/sample.git
+      - name: pwd-before
+        run: pwd
+      - name: build
+        run: |
+          cd sample
+          mvn clean install
+      - name: deploy 
+        run: echo "deploying the project..."

@@ -9,6 +9,6 @@ jobs:
       - name: clone
         run: git clone https://github.com/ajnaidu/sample.git
       - name: build
-        run: echo "building the project..."
+        run: mvn clean install
       - name: deploy 
         run: echo "deploying the project..."

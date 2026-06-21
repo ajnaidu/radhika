@@ -1,12 +1,12 @@
 name: multiplejobs workflow
-on: workflow_dispatch
+on: [workflow_dispatch, push]
 jobs:
   job1:
-      runs-on : ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - name: building
-        run: echo " building the job "
+        run: echo "building the job"
       - name: testing
-        run: echo " testing the job "
-      - name: Deploying 
-        run: echo " Deploying the job "
+        run: echo "testing the job"
+      - name: deploying 
+        run: echo "deploying the job"
